@@ -1,0 +1,32 @@
+﻿@model List<WeatherApplication.Models.WeatherData>
+
+<div class="text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Humidity</th>
+                <th scope="col">Temperature</th>
+                <th scope="col">Minimum Temperature</th>
+                <th scope="col">Maximum Temperature</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.time_stamp</td>
+                    <td>@item.humidity</td>
+                    <td>@item.temperature</td>
+                    <td>@item.min_temperature</td>
+                    <td>@item.max_temperature</td>
+
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+</div>

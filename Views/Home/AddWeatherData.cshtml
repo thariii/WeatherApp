@@ -1,0 +1,23 @@
+﻿@model WeatherApplication.Models.WeatherData
+
+<div class="text-center">
+    <form asp-controller="Home" asp-action="AddWeatherData" method="post">
+        <div class="form-group">
+            <label>Humidity</label>
+            <input type="text" class="form-control" placeholder="Enter Humidity" asp-for="humidity">
+        </div>
+        <div class="form-group">
+            <label>Temperature</label>
+            <input type="text" class="form-control" placeholder="Enter Temperature" asp-for="temperature">
+        </div>
+        <div class="form-group">
+            <label>Minimum Temperature</label>
+            <input type="text" class="form-control" placeholder="Enter MinTemp" asp-for="min_temperature">
+        </div>
+        <div class="form-group">
+            <label>Maximum Temperature</label>
+            <input type="text" class="form-control" placeholder="Enter MaxTemp" asp-for="max_temperature">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
